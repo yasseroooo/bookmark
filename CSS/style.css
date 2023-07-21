@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* ========================================================================= */
+.point-line {
+    border-bottom: 2px dotted black;
+    margin: 10px 0;
+  }
+
+ .first h1{
+   position: relative !important;
+   z-index: 1;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+ .first h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0%;
+    bottom: 5px;
+    z-index: -1;
+    background: #e9b55f;
+    transition:  1.5s  ease-in-out;
+    
+}
+.first h1:hover::after{
+    height: 100%;
+}
+
+
+  
